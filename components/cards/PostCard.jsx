@@ -150,4 +150,3 @@ const PostCard = ({ post, creator, loggedInUser, update }) => {
 };
 
 export default PostCard;
-s;

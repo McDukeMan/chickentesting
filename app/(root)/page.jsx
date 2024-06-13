@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    getFeedPost()
+    getFeedPost();
   }, []);
 
   return loading || !isLoaded ? (
