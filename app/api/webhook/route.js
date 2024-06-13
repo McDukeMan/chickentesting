@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import { createOrUpdateUser, deleteUser } from "@lib/actions/user";
 
 export async function POST(req) {
-  // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
+  // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhooks
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 
   if (!WEBHOOK_SECRET) {

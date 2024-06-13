@@ -11,7 +11,7 @@ export const POST = async (req, { params }) => {
 
     const user = await User.findOne({ clerkId: userId }).populate("posts savedPosts following followers").populate({
       path: "likedPosts",
-      model: "Post",
+      model: "Posts",
       populate: {
         path: "creator",
         model: "User",

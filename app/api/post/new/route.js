@@ -37,7 +37,7 @@ export const POST = async (req) => {
 
     await newPost.save()
 
-    // Update the user's posts array
+    // Update the user's posts arrays
     await User.findByIdAndUpdate(
       data.get("creatorId"),
       { $push: { posts: newPost._id } },

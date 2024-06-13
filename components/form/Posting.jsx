@@ -37,7 +37,7 @@ const Posting = ({ post, apiEndpoint }) => {
       });
 
       if (response.ok) {
-        router.push(`/profile/${data.creatorId}/posts`)
+        router.push(`/profile/${data.creatorId}/posts`);
       }
     } catch (err) {
       console.log(err);
@@ -54,7 +54,7 @@ const Posting = ({ post, apiEndpoint }) => {
         className="flex gap-4 items-center text-light-1 cursor-pointer"
       >
         {watch("postPhoto") ? (
-          // Check profile photo is a string or a file
+          // Check profile photo is a string or a files
           typeof watch("postPhoto") === "string" ? (
             <Image
               src={watch("postPhoto")}

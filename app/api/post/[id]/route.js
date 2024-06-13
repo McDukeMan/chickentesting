@@ -13,7 +13,7 @@ export const GET = async (req, { params }) => {
     return new Response(JSON.stringify(post), { status: 200 });
   } catch (err) {
     console.error(err);
-    return new Response("Fail to get post by id", { status: 500 });
+    return new Response("Fail to get post by ids", { status: 500 });
   }
 };
 

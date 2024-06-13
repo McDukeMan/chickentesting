@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { sidebarLinks } from "@constants";
 import Link from "next/link";
@@ -20,7 +20,10 @@ const BottomBar = () => {
               isActive && "bg-purple-1"
             }`}
           >
-            {link.icon} <p className="text-small-medium text-light-1 max-sm:hidden">{link.label.split(/\s+/)[0]}</p>
+            {link.icon}{" "}
+            <p className="text-small-medium text-light-1 max-sm:hidden">
+              {link.label.split(/\s+/)[0]}
+            </p>
           </Link>
         );
       })}

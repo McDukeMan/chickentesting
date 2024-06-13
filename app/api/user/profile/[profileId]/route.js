@@ -16,7 +16,7 @@ export const GET = async (req, { params }) => {
         },
       })
       .populate({
-        path: "followers following",
+        path: "followers followings",
         model: User,
         populate: {
           path: "posts savedPosts likedPosts",

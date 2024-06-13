@@ -19,6 +19,6 @@ export const DELETE = async (req, { params }) => {
     return new Response(JSON.stringify(user), { status: 200 });
   } catch (err) {
     console.error(err);
-    return new Response("Failed to delete the post", { status: 500 });
+    return new Response("Failed to delete the posts", { status: 500 });
   }
 };

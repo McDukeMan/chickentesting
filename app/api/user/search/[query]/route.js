@@ -13,7 +13,7 @@ export const GET = async (req, { params }) => {
         { firstName: { $regex: query, $options: "i" } },
         { lastName: { $regex: query, $options: "i" } },
       ],
-    }).populate("posts savedPosts likedPosts followers following").exec();
+    }).populate("posts savedPosts likedPosts followers followings").exec();
 
     return new Response(JSON.stringify(searchedUsers), { status: 200 });
   } catch (err) {

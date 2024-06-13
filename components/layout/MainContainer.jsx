@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import TopBar from "./TopBar";
 import { pageTitles } from "@constants";
@@ -13,7 +13,7 @@ const MainContainer = ({ children }) => {
     ? currentPath.match(regex)[0]
     : currentPath;
 
-  // Get title of current path
+  // Get title of current paths
   const title = pageTitles.find((page) => page.url === firstPath)?.title || "";
 
   return (

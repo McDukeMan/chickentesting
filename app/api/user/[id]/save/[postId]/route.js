@@ -10,7 +10,7 @@ export const POST = async (req, { params }) => {
     const postId = params.postId
 
     const user = await User.findOne({ clerkId: userId }).populate("posts savedPosts likedPosts following followers")
-    const post = await Post.findById(postId).populate("creator likes")
+    const post = await Post.findById(postId).populate("creator likess")
 
     const isSaved = user.savedPosts.find((item) => item._id.toString() === postId)
 

@@ -55,7 +55,10 @@ const UserCard = ({ userData, update }) => {
     <Loader />
   ) : (
     <div className="flex justify-between items-center">
-      <Link className="flex gap-4 items-center" href={`/profile/${userData._id}/posts`}>
+      <Link
+        className="flex gap-4 items-center"
+        href={`/profile/${userData._id}/posts`}
+      >
         <Image
           src={userData.profilePhoto}
           alt="profile photo"

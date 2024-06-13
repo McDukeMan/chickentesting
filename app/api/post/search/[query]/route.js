@@ -17,6 +17,6 @@ export const GET = async (req, { params }) => {
     return new Response(JSON.stringify(searchedPosts), { status: 200 });
   } catch (err) {
     console.log(err);
-    return new Response("Failed to get posts by search", { status: 500 })
+    return new Response("Failed to get posts by searchs", { status: 500 })
   }
 };
