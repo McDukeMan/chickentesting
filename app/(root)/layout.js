@@ -8,8 +8,8 @@ import RightSideBar from "@components/layout/RightSideBar";
 import BottomBar from "@components/layout/BottomBar";
 
 export const metadata = {
-  title: "Vibe Zone",
-  description: "Next 14 Social Media App",
+  title: "Chicken Social",
+  description: "Next.js",
 };
 
 const inter = Inter({ subsets: ["latin"] });
